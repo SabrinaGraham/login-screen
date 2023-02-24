@@ -2,23 +2,24 @@
 
 {% block main %}
 
-<div class="">
+<div class="login-form center-block text-center col-md-5">
     <h2>Please enter your credentials</h2>
     <form action="" method="" id="form-log">
-        <div class="">
+        <div class="pt-3 pb-3 form-group form-floating ">
             <label for="username" class="">Username</label>
-            <input type="text" id="username" name="username" class="" required>
+            <input type="text" id="username" name="username" class="form-control" required>
         </div>
-        <div class="">
+        <div class="pt-3 pb-3 form-group form-floating">
             <label for="password" class="">Password</label>
-            <input type="password" id="password" name="password" class="" required>
+            <input type="password" id="password" name="password" class="form-control" required>
         </div>
-        <div class="">
-            <button id="addbtn" class="" type="submit">Add</button>
-            <button id="checkbtn" class="" type="submit">Check</button>
+        <div class="pt-4">
+            <button id="addbtn" class="btn btn-success btn-block" type="submit">Add</button>
+            <button id="checkbtn" class="btn btn-success btn-block" type="submit">Check</button>
         </div>
     </form>
-    <div class="" id="msgbox">See results here</div>
+    <br>
+    <div class="alert alert-info" id="msgbox">See results here</div>
 </div>
 
 {% endblock %}
