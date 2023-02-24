@@ -1,6 +1,8 @@
 $(document).ready(function(){
     uname=document.getElementById('username');
     pswd=document.getElementById('password');
+    msgbox=document.getElementById("msgbox");
+    msgbox.setAttribute("hidden","hidden");
     $('.btn').click(function(e){
         $.ajax({
             url:'',
@@ -26,17 +28,21 @@ $(document).ready(function(){
     })
 
     $('.btn').click(function(e){
-        $.ajax({
+        if (uname.checkValidity() && pswd.checkValidity()){
+            $.ajax({
             url:'',
             type:'POST',
             contentType: 'application/json',
             data:{}       
-        })
-        .done(function(response){
-            msgbox=document.getElementById("msgbox")
+            })
+            .done(function(response){
+            
             msgbox.innerHTML = response.data
-        });
-        e.preventDefault();
+            msgbox.removeAttribute("hidden")
+            });
+        
+        }
+        
     })
     
 

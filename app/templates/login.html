@@ -4,7 +4,7 @@
 
 <div class="login-form center-block text-center col-md-5">
     <h2>Please enter your credentials</h2>
-    <form action="/" method="POST" id="form-log">
+    <form action="/" method="GET" id="form-log">
         <div class="pt-3 pb-3 form-group form-floating ">
             <label for="username" class="">Username</label>
             <input type="text" id="username" name="username" class="form-control" required>
@@ -19,7 +19,7 @@
         </div>
     </form>
     <br>
-    <div class="alert alert-info" id="msgbox">See results here</div>
+    <div class="alert alert-info" id="msgbox"></div>
 </div>
 
 {% endblock %}
