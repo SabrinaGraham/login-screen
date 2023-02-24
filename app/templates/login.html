@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="">
+    <h2>Please enter your credentials</h2>
+    <form action="" method="" id="form-log">
+        <div class="">
+            <label for="username" class="">Username</label>
+            <input type="text" id="username" name="username" class="" required>
+        </div>
+        <div class="">
+            <label for="password" class="">Password</label>
+            <input type="password" id="password" name="password" class="" required>
+        </div>
+        <div class="">
+            <button id="addbtn" class="" type="submit">Add</button>
+            <button id="checkbtn" class="" type="submit">Check</button>
+        </div>
+    </form>
+    <div class="" id="msgbox">See results here</div>
+</div>
+
+{% endblock %}
